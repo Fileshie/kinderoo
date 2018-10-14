@@ -1,0 +1,323 @@
+/*!
+Theme Name: Kinder
+Theme URI: http://underscores.me/
+Author: Fileshie Tirubeni
+Author URI: http://powerwebpress.com.au
+Description: A Kindergarten Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: kinder
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Kinder is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/ 
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+//global
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Hi+Melody', cursive;
+	font-weight: 900;
+}
+
+
+body {
+	font-family: 'Questrial', sans-serif;
+	font-size: 18px;
+	color: #404040;
+}
+
+.section-heading {
+	text-align: center;
+	padding-bottom: $heading-vertical-padding-xl;
+}
+
+.content-section {
+	padding: $padding_vertical_xl   $padding_horizontal_xl;
+
+}
+
+//header
+
+.site-header {
+	display: flex;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 75px;
+	line-height: 75px;
+}
+
+.sticky-top {
+	box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+	background-color: #fefefa;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main-navigation a {  
+	padding: 0 10px;
+	color: #404040;
+}
+
+.main-navigation a:active { 
+	color: #04AEDC;
+}
+
+.main-navigation a:hover { 
+	color: #04AEDC;
+}
+
+
+  /**************************************************
+	** Hero Section
+    *************************************************/
+
+#hero-section {
+	padding: 50px;
+	text-align: center;
+
+}
+
+.hero-text-section {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-cta-button {
+	margin-top: 60px;
+}
+
+#hero-button {
+    box-shadow: -3px 3px #000, -2px 2px #000, -1px 1px #000;
+		border: 1px solid #000;
+		height: 60px;
+    width: 200px;
+    line-height: 60px;
+    padding: 0px;
+		font-weight: 600;
+		border-radius: 8px;
+}
+
+
+
+/**************************************************
+	** About Section
+	*************************************************/
+
+.about-text {
+	margin-right: 50px;
+	white-space: pre-line;
+}
+
+.about-image {
+	float: right;
+}
+
+//services
+
+
+.service-box {
+	min-height: 100%;
+    height: 100%;
+    border-radius: 20px;
+	padding: $box-verticle-padding-xl $box-horizontal-padding-xl;	
+}
+
+.services-box-heading {
+	padding-bottom: $box-verticle-padding-xl;
+	text-align: center;
+}
+
+.service-box-text {
+	white-space: pre-line;
+}
+
+
+//team
+
+.team-heading {
+	padding-bottom: 0px;
+	color: #04aedc;
+}
+
+.team-text {
+	text-align: center;
+	padding-bottom: $heading-vertical-padding-xl;
+}
+
+.carousel {
+	height: 400px;
+	text-align: center;
+}
+
+.team-member {
+	margin: 20px 0;
+	height: 250px;
+		width: auto !important;
+		//opacity: 0.4;
+}
+
+.fa-arrow-left:before,
+.fa-arrow-right:before {
+	color: #000000;
+}
+
+.carousel-control-prev {
+	justify-content: flex-start;
+}
+
+.carousel-control-next {
+	justify-content: flex-end;
+}
+
+.team-info {
+	background-color:red;
+}
+
+
+.nav-pills .nav-link {
+	background-color: transparent;
+	opacity: 0.3;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-pills .nav-link.active {
+	background-color: transparent;
+	opacity: 1;
+}
+
+.owl-nav {
+	display: none;
+}
+
+.owl-dots {
+	display: none;
+}
+
+.nav-left {
+	text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-right {
+	text-align: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+//contact
+
+.contact {
+
+	color: #ffffff;
+}
+
+
+//footer
+
+.site-footer {
+	line-height: 75px;
+	text-align: center;
+}
