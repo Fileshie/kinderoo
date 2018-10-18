@@ -1,5 +1,5 @@
 # kinderoo
-A free WordPress theme for Kindergartens packed with plenty of features.
+A free WordPress theme for Kindergartens packed with plenty of features. [Demo](https://kinderoo.powerwebpress.com.au)
 
 ## About
 The aim of this theme is to be the best free WordPress themes for Kindergartens.
