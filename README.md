@@ -14,3 +14,4 @@ The aim of this theme is to be the best free WordPress themes for Kindergartens.
   - Contains options for 6 teachers
   - Footer allows allows widgets to be added for a contact form
  
+[Screenshot](https://fileshie.github.io/portfolio/kinderoo.png)
