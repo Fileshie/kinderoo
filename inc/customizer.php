@@ -312,7 +312,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'hero_button_url',
 	array(
-			'default' => '#',
+			'default' => '/#contact',
 			'transport'     => 'postMessage'
 	)
 );
@@ -406,7 +406,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 
 	'about_title_text_color',
 		array(
-				'default' => '#F32D2D',
+				'default' => '#04AEDC',
 				'type'              => 'theme_mod',
 				'transport' => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color'
@@ -556,7 +556,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 
 	'classes_title_text_color',
 		array(
-				'default' => '#F32D2D',
+				'default' => '##04aedc',
 				'type'              => 'theme_mod',
 				'transport' => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color'

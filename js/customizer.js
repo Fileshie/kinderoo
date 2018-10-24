@@ -97,13 +97,13 @@
 
 	wp.customize( 'hero_button_text', function( value ) {
 		value.bind( function( to ) {
-			$( 'hero-button' ).text( to );
+			$( '#hero-button' ).text( to );
 		} );
 	} );
 
 	wp.customize( 'hero_button_url', function( value ) {
 		value.bind( function( to ) {
-			$( 'hero-button' ).url( to );
+			$( '#hero-button' ).url( to );
 		} );
 	} );
 

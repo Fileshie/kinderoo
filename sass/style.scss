@@ -1,19 +1,19 @@
 /*!
-Theme Name: Kinder
-Theme URI: http://underscores.me/
-Author: Fileshie Tirubeni
-Author URI: http://powerwebpress.com.au
-Description: A Kindergarten Theme
+Theme Name: Kinderoo
+Theme URI: https://kinderoo.powerwebpress.com.au/
+Author: Power WebPress
+Author URI: http://powerwebpress.com.au/
+Description: Kinderoo is a free WordPress theme that provides a great front page experience. You do not need to know a single line of code to easily customize this site to suit your needs.All customizations are available via the WordPress Customizer. Sections: Header, About, Contains options for 4 classes, Contains options for 6 teachers, Contact section. This theme makes use of Bootstrap, Font Awesome, animate.css.
 Version: 1.0.0
 License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: kinder
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kinderoo
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Kinderoo WordPress Theme, Copyright 2018 Power WebPress
+Kinderoo is distributed under the terms of the GNU GPL v2 or later.
 
-Kinder is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Kinderoo is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -137,6 +137,10 @@ body {
 	padding-bottom: 0px;
 	height: 75px;
 	line-height: 75px;
+}
+
+.custom-logo {
+	max-height: 80px;
 }
 
 .sticky-top {
@@ -310,9 +314,34 @@ body {
 //contact
 
 .contact {
-
 	color: #ffffff;
 }
+
+.contact-details-social {
+	padding-bottom: 20px;
+}
+
+.contact-details-info {
+	padding: 20px 0;
+}
+
+
+.fa-phone, .fa-at, .fa-map-marker-alt {
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.btn-default {
+	box-shadow: -3px 3px #000, -2px 2px #000, -1px 1px #000;
+	border: 1px solid #000 !important;
+	height: 60px;
+	width: 200px;
+	line-height: 60px;
+	padding: 0px;
+	font-weight: 600 !important;
+	border-radius: 8px !important;
+}
+
 
 
 //footer
