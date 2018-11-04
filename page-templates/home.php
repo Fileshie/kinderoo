@@ -16,19 +16,19 @@
       <div class="row">
         <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" id="hero-image">
 
-          <img src=" <?php echo esc_url( get_theme_mod('hero_section_image') , 'kinderoo'); ?>" class="animated fadeInDownBig">
+          <img src=" <?php echo esc_url( get_theme_mod('hero_section_image'  , __(get_template_directory_uri() . '/images/Hero.png')) , 'kinderoo'); ?>" class="animated fadeInDownBig">
         </div>
         <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 hero-text-section">
           <h1 id="hero-title">
-            <?php _e( get_theme_mod('hero_title') , 'kinderoo'); ?>
+            <?php _e( get_theme_mod('hero_title' , __('WELCOME TO KINDEROO')) , 'kinderoo'); ?>
           </h1>
           <h2 id="hero-description">
-            <?php _e( get_theme_mod('hero_description') , 'kinderoo'); ?>
+            <?php _e( get_theme_mod('hero_description' , __('A fun easy to customize Kindergarten Theme')) , 'kinderoo'); ?>
           </h2>
 
           <div class="hero-cta-button">
-            <a class="btn btn-lg" id="hero-button" href="<?php _e( get_theme_mod('hero_button_url') , 'kinderoo'); ?>">
-              <?php _e( get_theme_mod('hero_button_text') , 'kinderoo'); ?></a>
+            <a class="btn btn-lg" id="hero-button" href="<?php _e( get_theme_mod('hero_button_url', __('/#contact')) , 'kinderoo'); ?>">
+              <?php _e( get_theme_mod('hero_button_text' , __('Contact Us')) , 'kinderoo'); ?></a>
           </div>
 
 
@@ -44,27 +44,29 @@
   <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
       <h2 class="about-heading section-heading" id="about-heading">
-        <?php _e( get_theme_mod('about_title') , 'kinderoo'); ?>
+        <?php _e( get_theme_mod('about_title' , __('ABOUT')) , 'kinderoo'); ?>
       </h2>
     </div>
   </div>
   <div class="row">
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
       <p id="about-text" class="about-text section-text">
-        <?php _e( get_theme_mod('about_text') , 'kinderoo'); ?>
+        <?php _e( get_theme_mod('about_text' , __('Are you a Kindergarten in need of an awesome website? </br>Do you want to cut out the middle man and save on expenses that could be reinvested back into your Kindergarten? </br></br>Then Kinderoo is the theme for you. Kinderoo is a free WordPress theme that provides a great front page experience. You do not need to know a single line of code to easily customize this site to suit your needs.</br></br>All customizations are available via the WordPress Customizer.</br></br>Sections:</br>Header</br>About</br>Contains options for 4 classes</br>Contains options for 6 teachers</br>Footer allows allows widgets to be added for a contact form')) , 'kinderoo'); ?>
       </p>
     </div>
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" id="about-img">
-      <img src=" <?php echo esc_url( get_theme_mod('about_image') , 'kinderoo'); ?>" class="about-image">
+      <img src=" <?php echo esc_url( get_theme_mod('about_image' , __(get_template_directory_uri() . '/images/About.png')) , 'kinderoo'); ?>" class="about-image">
     </div>
   </div>
 </div>
+
+<!-- CLASSES Section -->
 
 <div class="container-fluid content-section services" id="classes">
   <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
       <h2 class="services-heading section-heading" id="services-heading">
-        <?php _e( get_theme_mod('classes_title') , 'kinderoo'); ?>
+        <?php _e( get_theme_mod('classes_title' , __('CLASSES')) , 'kinderoo'); ?>
       </h2>
     </div>
   </div>
@@ -75,14 +77,14 @@
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h3 class="services-box-heading" id="services-box-heading1">
-              <?php _e( get_theme_mod('box1_classes_title') , 'kinderoo'); ?>
+              <?php _e( get_theme_mod('box1_classes_title' , __('Busy Bees')) , 'kinderoo'); ?>
             </h3>
           </div>
         </div>
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <p class="service-box-text" id="services-box-text1">
-              <?php _e( get_theme_mod('box1_classes_text') , 'kinderoo'); ?>
+              <?php _e( get_theme_mod('box1_classes_text' , __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
             </p>
           </div>
         </div>
@@ -94,14 +96,14 @@
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h3 class="services-box-heading" id="services-box-heading2">
-              <?php _e( get_theme_mod('box2_classes_title') , 'kinderoo'); ?>
+              <?php _e( get_theme_mod('box2_classes_title' , __('Jungle Cubs')) , 'kinderoo'); ?>
             </h3>
           </div>
         </div>
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <p class="service-box-text" id="services-box-text2">
-              <?php _e( get_theme_mod('box2_classes_text') , 'kinderoo'); ?>
+              <?php _e( get_theme_mod('box2_classes_text' , __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
             </p>
 
           </div>
@@ -113,14 +115,14 @@
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h3 class="services-box-heading" id="services-box-heading3">
-              <?php _e( get_theme_mod('box3_classes_title') , 'kinderoo'); ?>
+              <?php _e( get_theme_mod('box3_classes_title' , __('Super Sprouts')) , 'kinderoo'); ?>
             </h3>
           </div>
         </div>
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <p class="service-box-text" id="services-box-text3">
-              <?php _e( get_theme_mod('box3_classes_text') , 'kinderoo'); ?>
+              <?php _e( get_theme_mod('box3_classes_text' , __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
             </p>
           </div>
         </div>
@@ -132,14 +134,14 @@
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h3 class="services-box-heading" id="services-box-heading4">
-              <?php _e( get_theme_mod('box4_classes_title') , 'kinderoo'); ?>
+              <?php _e( get_theme_mod('box4_classes_title' , __('Space Cadets')) , 'kinderoo'); ?>
             </h3>
           </div>
         </div>
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <p class="service-box-text" id="services-box-text4">
-              <?php _e( get_theme_mod('box4_classes_text') , 'kinderoo'); ?>
+              <?php _e( get_theme_mod('box4_classes_text' , __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
             </p>
           </div>
         </div>
@@ -153,14 +155,14 @@
   <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
       <h2 class="team-heading section-heading" id="team-heading">
-        <?php _e( get_theme_mod('team_heading') , 'kinderoo'); ?>
+        <?php _e( get_theme_mod('team_heading' , __('Meet Our Teachers')) , 'kinderoo'); ?>
       </h2>
     </div>
   </div>
   <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
       <p class="team-text section-text" id="team-text">
-        <?php _e( get_theme_mod('team_text') , 'kinderoo'); ?>
+        <?php _e( get_theme_mod('team_text' , __('This Kinderoo theme allows you to display 6 Team Members')) , 'kinderoo'); ?>
       </p>
     </div>
   </div>
@@ -180,38 +182,38 @@
 
         <li class="nav-item">
           <a class="nav-link active" id="pills-member1-tab" data-toggle="pill" href="#pills-member1" role="tab"
-            aria-controls="pills-member1" aria-selected="true"><img class="img-fluid team-member" value="Show Div" src=" <?php echo esc_url( get_theme_mod('team_member_1_image') , 'kinderoo'); ?>" />
+            aria-controls="pills-member1" aria-selected="true"><img class="img-fluid team-member" value="Show Div" src=" <?php echo esc_url( get_theme_mod('team_member_1_image' , __(get_template_directory_uri() . '/images/Teacher1.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member2-tab" data-toggle="pill" href="#pills-member2" role="tab" aria-controls="pills-member2"
-            aria-selected="false"> <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_2_image') , 'kinderoo'); ?>" />
+            aria-selected="false"> <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_2_image' , __(get_template_directory_uri() . '/images/Teacher2.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member3-tab" data-toggle="pill" href="#pills-member3" role="tab" aria-controls="pills-member3"
-            aria-selected="false"> <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_3_image') , 'kinderoo'); ?>" />
+            aria-selected="false"> <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_3_image' , __(get_template_directory_uri() . '/images/Teacher3.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member4-tab" data-toggle="pill" href="#pills-member4" role="tab" aria-controls="pills-member4"
-            aria-selected="false"><img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_4_image') , 'kinderoo'); ?>" />
+            aria-selected="false"><img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_4_image' , __(get_template_directory_uri() . '/images/Teacher4.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member5-tab" data-toggle="pill" href="#pills-member5" role="tab" aria-controls="pills-member5"
-            aria-selected="false"><img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_5_image') , 'kinderoo'); ?>" />
+            aria-selected="false"><img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_5_image' , __(get_template_directory_uri() . '/images/Teacher5.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member6-tab" data-toggle="pill" href="#pills-member6" role="tab" aria-controls="pills-member6"
             aria-selected="false">
-            <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_6_image') , 'kinderoo'); ?>" />
+            <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_6_image' , __(get_template_directory_uri() . '/images/Teacher6.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 

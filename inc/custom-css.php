@@ -63,7 +63,7 @@ function kinderoo_customizer_css($custom)
     $classes_box1_background_color = esc_attr ( get_theme_mod( 'classes_box1_background_color', '#04dc9f' ) );
     $custom .= "#service-box-1 { background-color: ${classes_box1_background_color} }";
 
-    $box1_classes_title_text_color = esc_attr ( get_theme_mod( 'box1_classes_title_text_color', '#000000' ) );
+    $box1_classes_title_text_color = esc_attr ( get_theme_mod( 'box1_classes_title_text_color', '#ffffff' ) );
     $custom .= "#services-box-heading1 { color: ${box1_classes_title_text_color} }";
         
     $box1_classes_text_color = esc_attr ( get_theme_mod( 'box1_classes_text_color', '#ffffff' ) );
@@ -72,7 +72,7 @@ function kinderoo_customizer_css($custom)
     $classes_box2_background_color = esc_attr ( get_theme_mod( 'classes_box2_background_color', '#04AEDC' ) );
     $custom .= "#service-box-2 { background-color: ${classes_box2_background_color} }";
 
-   $box2_classes_title_text_color = esc_attr ( get_theme_mod( 'box2_classes_title_text_color', '#000000' ) );
+   $box2_classes_title_text_color = esc_attr ( get_theme_mod( 'box2_classes_title_text_color', '#ffffff' ) );
    $custom .= "#services-box-heading2 { color: ${box2_classes_title_text_color} }";
 
    $box2_classes_text_color = esc_attr ( get_theme_mod( 'box2_classes_text_color', '#ffffff' ) );
@@ -81,7 +81,7 @@ function kinderoo_customizer_css($custom)
     $classes_box3_background_color = esc_attr ( get_theme_mod( 'classes_box3_background_color', '#04dc9f' ) );
     $custom .= "#service-box-3 { background-color: ${classes_box3_background_color} }";
 
-   $box3_classes_title_text_color = esc_attr ( get_theme_mod( 'box3_classes_title_text_color', '#000000' ) );
+   $box3_classes_title_text_color = esc_attr ( get_theme_mod( 'box3_classes_title_text_color', '#ffffff' ) );
    $custom .= "#services-box-heading3 { color: ${box3_classes_title_text_color} }";
 
    $box3_classes_text_color = esc_attr ( get_theme_mod( 'box3_classes_text_color', '#ffffff' ) );
@@ -90,7 +90,7 @@ function kinderoo_customizer_css($custom)
     $classes_box4_background_color = esc_attr ( get_theme_mod( 'classes_box4_background_color', '#04AEDC' ) );
     $custom .= "#service-box-4 { background-color: ${classes_box4_background_color} }";
 
-    $box4_classes_title_text_color = esc_attr ( get_theme_mod( 'box4_classes_title_text_color', '#000000' ) );
+    $box4_classes_title_text_color = esc_attr ( get_theme_mod( 'box4_classes_title_text_color', '#ffffff' ) );
     $custom .= "#services-box-heading4 { color: ${box4_classes_title_text_color} }";
 
     $box4_classes_text_color = esc_attr ( get_theme_mod( 'box4_classes_text_color', '#ffffff' ) );
@@ -98,6 +98,22 @@ function kinderoo_customizer_css($custom)
 
     $classes_background_color = esc_attr ( get_theme_mod( 'classes_background_color', '#F2F2F2' ) );
     $custom .= ".services { background-color: ${classes_background_color} }";
+
+ /**************************************************
+    ** Team Section
+ *************************************************/
+    
+    $team_heading_text_color = esc_attr ( get_theme_mod( 'team_heading_text_color', '#04aedc' ) );
+    $custom .= "#team-heading { color: ${team_heading_text_color} }";
+
+    $team_text_color = esc_attr ( get_theme_mod( 'team_text_color', '#404040' ) );
+    $custom .= "#team-text { color: ${team_text_color} }";
+
+    $team_background_color = esc_attr ( get_theme_mod( 'team_background_color', '#ffffff' ) );
+    $custom .= "#team { background-color: ${team_background_color} }";
+
+
+
 
  /**************************************************
     ** Contact Section

@@ -1,4 +1,4 @@
-<?php
+`<?php
 /**
  * Kinder Theme Customizer
  *
@@ -136,7 +136,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 
 	'hero_section_background_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/sunshine.png',
       'transport' => 'postMessage',
    )
 );
@@ -171,7 +171,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting( 
 	'hero_section_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/Hero.png',
       'transport' => 'postMessage',
    )
 );
@@ -429,7 +429,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'about_text',
 	array(
-			'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			'default' => 'Are you a Kindergarten in need of an awesome website? </br>Do you want to cut out the middle man and save on expenses that could be reinvested back into your Kindergarten? </br></br>Then Kinderoo is the theme for you. Kinderoo is a free WordPress theme that provides a great front page experience. You do not need to know a single line of code to easily customize this site to suit your needs.</br></br>All customizations are available via the WordPress Customizer.</br></br>Sections:</br>Header</br>About</br>Contains options for 4 classes</br>Contains options for 6 teachers</br>Footer allows allows widgets to be added for a contact form',
 			'transport'     => 'postMessage'
 	)
 );
@@ -470,7 +470,7 @@ $wp_customize->add_control(
 
 $wp_customize->add_setting( 'about_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/About.png',
       'transport' => 'refresh',
    )
 );
@@ -537,7 +537,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
 	'classes_title',
 	array(
-			'default' => 'Classes',
+			'default' => 'CLASSES',
 			'transport'     => 'postMessage'
 	)
 );
@@ -588,7 +588,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
 'box1_classes_title',
 array(
-		'default' => 'Class 1',
+		'default' => 'Busy Bees',
 		'transport'     => 'postMessage'
 )
 );
@@ -606,7 +606,7 @@ array(
 $wp_customize->add_setting( 
 	'box1_classes_title_text_color',
 		array(
-				'default' => '#000000',
+				'default' => '#ffffff',
 				'type'              => 'theme_mod',
 				'transport' => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color'
@@ -627,7 +627,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'box1_classes_text',
 	array(
-			'default' => 'Classes Text',
+			'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -666,7 +666,7 @@ $wp_customize->add_control(
 
 $wp_customize->add_setting( 'classes_box1_background_color',
    array(
-			'default' => '#FFE700',
+			'default' => '#04dc9f',
 			'type'              => 'theme_mod',
       'transport' => 'postMessage',
       'sanitize_callback' => 'sanitize_hex_color'
@@ -698,7 +698,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
 'box2_classes_title',
 array(
-		'default' => 'Class 2',
+		'default' => 'Jungle Cubs',
 		'transport'     => 'postMessage'
 )
 );
@@ -716,7 +716,7 @@ array(
 $wp_customize->add_setting( 
 	'box2_classes_title_text_color',
 		array(
-				'default' => '#000000',
+				'default' => '#ffffff',
 				'type'              => 'theme_mod',
 				'transport' => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color'
@@ -737,7 +737,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'box2_classes_text',
 	array(
-			'default' => 'Text',
+			'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -745,7 +745,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'box2_classes_text',
 	array(
-			'label' => __( 'Classes Text', 'kinderoo' ),
+			'label' => __( 'Text', 'kinderoo' ),
 			'section' => 'kinderoo_classes_box_2',
 			'type' => 'textarea',
 			'priority' => 10
@@ -777,7 +777,7 @@ $wp_customize->add_control(
 
 $wp_customize->add_setting( 'classes_box2_background_color',
    array(
-			'default' => '#059334',
+			'default' => '#04AEDC',
 			'type'              => 'theme_mod',
       'transport' => 'postMessage',
       'sanitize_callback' => 'sanitize_hex_color'
@@ -808,7 +808,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
 'box3_classes_title',
 array(
-		'default' => 'Class 3',
+		'default' => 'Super Sprouts',
 		'transport'     => 'postMessage'
 )
 );
@@ -826,7 +826,7 @@ array(
 $wp_customize->add_setting( 
 	'box3_classes_title_text_color',
 		array(
-				'default' => '#000000',
+				'default' => '#ffffff',
 				'type'              => 'theme_mod',
 				'transport' => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color'
@@ -847,7 +847,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'box3_classes_text',
 	array(
-			'default' => 'classes text',
+			'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -887,7 +887,7 @@ $wp_customize->add_control(
 
 $wp_customize->add_setting( 'classes_box3_background_color',
    array(
-			'default' => '#F32D2D',
+			'default' => '#04dc9f',
 			'type'              => 'theme_mod',
       'transport' => 'postMessage',
       'sanitize_callback' => 'sanitize_hex_color'
@@ -918,7 +918,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
 'box4_classes_title',
 array(
-		'default' => 'Class 4',
+		'default' => 'Space Cadets',
 		'transport'     => 'postMessage'
 )
 );
@@ -936,7 +936,7 @@ array(
 $wp_customize->add_setting( 
 	'box4_classes_title_text_color',
 		array(
-				'default' => '#000000',
+				'default' => '#ffffff',
 				'type'              => 'theme_mod',
 				'transport' => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color'
@@ -957,7 +957,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'box4_classes_text',
 	array(
-			'default' => 'classes text',
+			'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -997,7 +997,7 @@ $wp_customize->add_control(
 
 $wp_customize->add_setting( 'classes_box4_background_color',
    array(
-			'default' => '#A1B3F0',
+			'default' => '#04AEDC',
 			'type'              => 'theme_mod',
       'transport' => 'postMessage',
       'sanitize_callback' => 'sanitize_hex_color'
@@ -1066,7 +1066,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
 	'team_heading',
 	array(
-			'default' => 'Meet The Team',
+			'default' => 'Meet Our Teachers',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1081,10 +1081,31 @@ $wp_customize->add_control(
 	)
 );
 
+$wp_customize->add_setting( 
+	'team_heading_text_color',
+		array(
+				'default' => '#04aedc',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_heading_text_color',
+		array(
+				'label' => __( 'Title text color' ),
+				'section' => 'kinderoo_team_section',
+				'settings'  => 'team_heading_text_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
+);
+
 $wp_customize->add_setting(
 	'team_text',
 	array(
-			'default' => 'Team Text',
+			'default' => 'This Kinderoo theme allows you to display 6 Team Members',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1100,6 +1121,49 @@ $wp_customize->add_control(
 	)
 );
 
+$wp_customize->add_setting( 
+	'team_text_color',
+		array(
+				'default' => '#404040',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_text_color',
+		array(
+				'label' => __( 'Text color' ),
+				'section' => 'kinderoo_team_section',
+				'settings'  => 'team_text_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
+);
+
+$wp_customize->add_setting( 
+	'team_background_color',
+		array(
+				'default' => '#ffffff',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_background_color',
+		array(
+				'label' => __( 'Background color' ),
+				'settings'  => 'team_background_color',
+				'section' => 'kinderoo_team_section',
+				'priority' => 10, 
+				'type' => 'color',
+		)
+);
+
+
 
 //Team Member 1
 
@@ -1114,7 +1178,7 @@ $wp_customize->add_section(
 
 $wp_customize->add_setting( 'team_member_1_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/Teacher1.png',
       'transport' => 'postMessage',
    )
 );
@@ -1139,7 +1203,7 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'team
 $wp_customize->add_setting(
 	'team_member_1_text',
 	array(
-			'default' => 'Team Member 1 Text',
+			'default' => '<strong>Alice Smith</strong><br/>Head Mistress<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1168,7 +1232,7 @@ $wp_customize->add_section(
 
 $wp_customize->add_setting( 'team_member_2_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/Teacher2.png',
       'transport' => 'postMessage',
    )
 );
@@ -1193,7 +1257,7 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'team
 $wp_customize->add_setting(
 	'team_member_2_text',
 	array(
-			'default' => 'Team Member 2 Text',
+			'default' => '<strong>Sally White</strong><br/><br/>Busy Bees Teacher<br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1222,7 +1286,7 @@ $wp_customize->add_section(
 
 $wp_customize->add_setting( 'team_member_3_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/Teacher3.png',
       'transport' => 'postMessage',
    )
 );
@@ -1247,7 +1311,7 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'team
 $wp_customize->add_setting(
 	'team_member_3_text',
 	array(
-			'default' => 'Team Member 3 Text',
+			'default' => '<strong>John Reed</strong><br/>Jungle Cubs Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1276,7 +1340,7 @@ $wp_customize->add_section(
 
 $wp_customize->add_setting( 'team_member_4_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/Teacher4.png',
       'transport' => 'postMessage',
    )
 );
@@ -1301,7 +1365,7 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'team
 $wp_customize->add_setting(
 	'team_member_4_text',
 	array(
-			'default' => 'Team Member 4 Text',
+			'default' => '<strong>Jenna Blake</strong><br/>Super Sprouts Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1330,7 +1394,7 @@ $wp_customize->add_section(
 
 $wp_customize->add_setting( 'team_member_5_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/Teacher5.png',
       'transport' => 'postMessage',
    )
 );
@@ -1355,7 +1419,7 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'team
 $wp_customize->add_setting(
 	'team_member_5_text',
 	array(
-			'default' => 'Team Member 5 Text',
+			'default' => '<strong>Oliver Lake</strong><br/>Space Cadets Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1384,7 +1448,7 @@ $wp_customize->add_section(
 
 $wp_customize->add_setting( 'team_member_6_image',
    array(
-      'default' => '',
+      'default' => get_template_directory_uri() . '/images/Teacher6.png',
       'transport' => 'postMessage',
    )
 );
@@ -1409,7 +1473,7 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'team
 $wp_customize->add_setting(
 	'team_member_6_text',
 	array(
-			'default' => 'Team Member 6 Text',
+			'default' => '<strong>Laura Price</strong><br/>Music Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1657,7 +1721,7 @@ $wp_customize->add_control(
 			$wp_customize->add_setting( 
 				'contact_background_color',
 					array(
-							'default' => '#663300',
+							'default' => '#04dc9f',
 							'type'              => 'theme_mod',
 							'transport' => 'postMessage',
 							'sanitize_callback' => 'sanitize_hex_color'

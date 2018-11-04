@@ -107,6 +107,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 //global
 
+html {
+	scroll-behavior: smooth;
+}
+
 h1,h2,h3,h4,h5 {
 	font-family: 'Hi+Melody', cursive;
 	font-weight: 900;
@@ -237,7 +241,6 @@ body {
 
 .team-heading {
 	padding-bottom: 0px;
-	color: #04aedc;
 }
 
 .team-text {
@@ -259,7 +262,7 @@ body {
 
 .fa-arrow-left:before,
 .fa-arrow-right:before {
-	color: #000000;
+	color: #04AEDC;
 }
 
 .carousel-control-prev {
