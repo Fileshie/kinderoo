@@ -556,7 +556,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 
 	'classes_title_text_color',
 		array(
-				'default' => '##04aedc',
+				'default' => '#04aedc',
 				'type'              => 'theme_mod',
 				'transport' => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color'
@@ -1143,6 +1143,28 @@ $wp_customize->add_control(
 );
 
 $wp_customize->add_setting( 
+	'team_arrow_color',
+		array(
+				'default' => '#04aedc',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_arrow_color',
+		array(
+				'label' => __( 'arrow color' ),
+				'section' => 'kinderoo_team_section',
+				'settings'  => 'team_arrow_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
+);
+
+
+$wp_customize->add_setting( 
 	'team_background_color',
 		array(
 				'default' => '#ffffff',
@@ -1162,6 +1184,8 @@ $wp_customize->add_control(
 				'type' => 'color',
 		)
 );
+
+
 
 
 
@@ -1219,6 +1243,27 @@ $wp_customize->add_control(
 	)
 );
 
+$wp_customize->add_setting( 
+	'team_member_1_text_color',
+		array(
+				'default' => '#404040',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_member_1_text_color',
+		array(
+				'label' => __( 'Text color' ),
+				'section' => 'kinderoo_team_member_1',
+				'settings'  => 'team_member_1_text_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
+);
+
 //Team Member 2
 
 $wp_customize->add_section(
@@ -1257,7 +1302,7 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'team
 $wp_customize->add_setting(
 	'team_member_2_text',
 	array(
-			'default' => '<strong>Sally White</strong><br/><br/>Busy Bees Teacher<br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+			'default' => '<strong>Sally White</strong><br/>Busy Bees Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'transport'     => 'postMessage'
 	)
 );
@@ -1271,6 +1316,28 @@ $wp_customize->add_control(
 			'priority' => 10
 			
 	)
+);
+
+
+$wp_customize->add_setting( 
+	'team_member_2_text_color',
+		array(
+				'default' => '#404040',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_member_2_text_color',
+		array(
+				'label' => __( 'Text color' ),
+				'section' => 'kinderoo_team_member_2',
+				'settings'  => 'team_member_2_text_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
 );
 
 //Team Member 3
@@ -1327,6 +1394,28 @@ $wp_customize->add_control(
 	)
 );
 
+
+$wp_customize->add_setting( 
+	'team_member_3_text_color',
+		array(
+				'default' => '#404040',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_member_3_text_color',
+		array(
+				'label' => __( 'Text color' ),
+				'section' => 'kinderoo_team_member_3',
+				'settings'  => 'team_member_3_text_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
+);
+
 //Team Member 4
 
 $wp_customize->add_section(
@@ -1379,6 +1468,28 @@ $wp_customize->add_control(
 			'priority' => 10
 			
 	)
+);
+
+
+$wp_customize->add_setting( 
+	'team_member_4_text_color',
+		array(
+				'default' => '#404040',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_member_4_text_color',
+		array(
+				'label' => __( 'Text color' ),
+				'section' => 'kinderoo_team_member_4',
+				'settings'  => 'team_member_4_text_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
 );
 
 //Team Member 5
@@ -1435,6 +1546,28 @@ $wp_customize->add_control(
 	)
 );
 
+
+$wp_customize->add_setting( 
+	'team_member_5_text_color',
+		array(
+				'default' => '#404040',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_member_5_text_color',
+		array(
+				'label' => __( 'Text color' ),
+				'section' => 'kinderoo_team_member_5',
+				'settings'  => 'team_member_5_text_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
+);
+
 //Team Member 6
 
 $wp_customize->add_section(
@@ -1487,6 +1620,28 @@ $wp_customize->add_control(
 			'priority' => 10
 			
 	)
+);
+
+
+$wp_customize->add_setting( 
+	'team_member_6_text_color',
+		array(
+				'default' => '#404040',
+				'type'              => 'theme_mod',
+				'transport' => 'postMessage',
+				'sanitize_callback' => 'sanitize_hex_color'
+		)
+);
+ 
+$wp_customize->add_control( 
+	'team_member_6_text_color',
+		array(
+				'label' => __( 'Text color' ),
+				'section' => 'kinderoo_team_member_6',
+				'settings'  => 'team_member_6_text_color',
+				'priority' => 10, 
+				'type' => 'color',
+		)
 );
 
 /**************************************************
@@ -1721,7 +1876,7 @@ $wp_customize->add_control(
 			$wp_customize->add_setting( 
 				'contact_background_color',
 					array(
-							'default' => '#04dc9f',
+							'default' => '#04aedc',
 							'type'              => 'theme_mod',
 							'transport' => 'postMessage',
 							'sanitize_callback' => 'sanitize_hex_color'
@@ -1738,6 +1893,49 @@ $wp_customize->add_control(
 							'type' => 'color',
 					)
 			);
+
+	/**************************************************
+		** Footer Section
+	*************************************************/
+
+	$wp_customize->add_panel( 'kinderoo_footer_panel', array(
+		'priority'       => 8,
+		'capability'     => 'edit_theme_options',
+		'theme_supports' => '',
+		'title'          => __('Footer section', 'kinderoo'),
+	) );
+
+	$wp_customize->add_section(
+		'kinderoo_footer_background',
+			array(
+				'title'         => __('Background', 'kinderoo'),
+				'panel'         => 'kinderoo_footer_panel', 
+			)
+	);
+	
+
+
+	$wp_customize->add_setting( 
+		'footer_background_color',
+			array(
+					'default' => '#ffffff',
+					'type'              => 'theme_mod',
+					'transport' => 'postMessage',
+					'sanitize_callback' => 'sanitize_hex_color'
+			)
+	);
+	 
+	$wp_customize->add_control( 
+		'footer_background_color',
+			array(
+					'label' => __( 'Background color' ),
+					'settings'  => 'footer_background_color',
+					'section' => 'kinderoo_footer_background',
+					'priority' => 10, 
+					'type' => 'color',
+			)
+	);
+
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(

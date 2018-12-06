@@ -121,6 +121,8 @@ body {
 	font-family: 'Questrial', sans-serif;
 	font-size: 18px;
 	color: #404040;
+	letter-spacing: 0.3px;
+  word-spacing: 1.5px;
 }
 
 .section-heading {
@@ -260,11 +262,6 @@ body {
 		//opacity: 0.4;
 }
 
-.fa-arrow-left:before,
-.fa-arrow-right:before {
-	color: #04AEDC;
-}
-
 .carousel-control-prev {
 	justify-content: flex-start;
 }
@@ -272,11 +269,6 @@ body {
 .carousel-control-next {
 	justify-content: flex-end;
 }
-
-.team-info {
-	background-color:red;
-}
-
 
 .nav-pills .nav-link {
 	background-color: transparent;

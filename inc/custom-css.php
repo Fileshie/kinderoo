@@ -112,6 +112,34 @@ function kinderoo_customizer_css($custom)
     $team_background_color = esc_attr ( get_theme_mod( 'team_background_color', '#ffffff' ) );
     $custom .= "#team { background-color: ${team_background_color} }";
 
+    $team_arrow_color = esc_attr ( get_theme_mod( 'team_arrow_color', '#04aedc' ) );
+    $custom .= ".fa-arrow-left:before { color: ${team_arrow_color} }";
+
+    $team_arrow_color = esc_attr ( get_theme_mod( 'team_arrow_color', '#04aedc' ) );
+    $custom .= ".fa-arrow-right:before { color: ${team_arrow_color} }";
+
+    $team_member_1_text_color = esc_attr ( get_theme_mod( 'team_member_1_text_color', '#404040' ) );
+    $custom .= "#pills-member1 { color: ${team_member_1_text_color} }";
+
+    $team_member_2_text_color = esc_attr ( get_theme_mod( 'team_member_2_text_color', '#404040' ) );
+    $custom .= "#pills-member2 { color: ${team_member_2_text_color} }";
+
+    $team_member_3_text_color = esc_attr ( get_theme_mod( 'team_member_3_text_color', '#404040' ) );
+    $custom .= "#pills-member3 { color: ${team_member_3_text_color} }";
+
+    $team_member_4_text_color = esc_attr ( get_theme_mod( 'team_member_4_text_color', '#404040' ) );
+    $custom .= "#pills-member4 { color: ${team_member_4_text_color} }";
+
+    $team_member_5_text_color = esc_attr ( get_theme_mod( 'team_member_5_text_color', '#404040' ) );
+    $custom .= "#pills-member5 { color: ${team_member_5_text_color} }";
+
+    $team_member_6_text_color = esc_attr ( get_theme_mod( 'team_member_6_text_color', '#404040' ) );
+    $custom .= "#pills-member6 { color: ${team_member_6_text_color} }";
+
+
+
+
+
 
 
 
@@ -119,11 +147,18 @@ function kinderoo_customizer_css($custom)
     ** Contact Section
  *************************************************/
     
-$contact_background_color = esc_attr ( get_theme_mod( 'contact_background_color', '#04dc9f' ) );
+$contact_background_color = esc_attr ( get_theme_mod( 'contact_background_color', '#04aedc' ) );
 $custom .= ".contact { background-color: ${contact_background_color} }";
 
     
-    
+
+ /**************************************************
+    ** Footer Section
+ *************************************************/
+
+$footer_background_color = esc_attr ( get_theme_mod( 'footer_background_color', '#ffffff' ) );
+$custom .= "site-footer { background-color: ${footer_background_color} }";
+
 
     wp_add_inline_style( 'kinderoo-style' , $custom );
 }

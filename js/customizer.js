@@ -308,7 +308,7 @@
 	} );
 
 		/**************************************************
-			** Classes Section
+			** Team Section
 		*************************************************/
 
 	wp.customize( 'team_heading', function( value ) {
@@ -317,15 +317,47 @@
 		} );
 	} );
 
+	wp.customize( 'team_heading_text_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#team-heading' ).css( 'color', to );
+		} );
+	} );
+
 	wp.customize( 'team_text', function( value ) {
 		value.bind( function( to ) {
-			$( '#team-heading' ).text( to );
+			$( '#team-text' ).text( to );
 		} );
 	} );	
 
+	wp.customize( 'team_text_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#team-text' ).css( 'color', to );
+		} );
+	} );
+
+	wp.customize( 'team_arrow_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.fa-arrow-left:before' ).css( 'color', to );
+		} );
+	} );
+
+	wp.customize( 'team_arrow_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.fa-arrow-right:before' ).css( 'color', to );
+		} );
+	} );
+
+
+	wp.customize( 'team_background_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#team' ).css( 'background-color', to );
+			
+		} );
+	} ); 
+
 	wp.customize( 'team_member_1_image', function( value ) {
 		value.bind( function( to ) {
-			$( '#pills-member1-tab' ).attr( 'src',  to );
+			$( '.team-member-1-image' ).attr( 'src',  to );
 		} );
 	} );
 
@@ -335,9 +367,16 @@
 		} );
 	} );
 
+	wp.customize( 'team_member_1_text_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#pills-member1' ).css( 'color', to );
+		} );
+	} );
+
+
 	wp.customize( 'team_member_2_image', function( value ) {
 		value.bind( function( to ) {
-			$( '#pills-member2-tab' ).attr( 'src',  to );
+			$( '.team-member-2-image' ).attr( 'src',  to );
 		} );
 	} );
 
@@ -347,10 +386,16 @@
 		} );
 	} );
 
+	wp.customize( 'team_member_2_text_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#pills-member2' ).css( 'color', to );
+		} );
+	} );
+
 
 	wp.customize( 'team_member_3_image', function( value ) {
 		value.bind( function( to ) {
-			$( '#pills-member3-tab' ).attr( 'src',  to );
+			$( '.team-member-3-image' ).attr( 'src',  to );
 		} );
 	} );
 
@@ -360,10 +405,16 @@
 		} );
 	} );
 
+	wp.customize( 'team_member_3_text_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#pills-member3' ).css( 'color', to );
+		} );
+	} );
+
 
 	wp.customize( 'team_member_4_image', function( value ) {
 		value.bind( function( to ) {
-			$( '#pills-member4-tab' ).attr( 'src',  to );
+			$( '.team-member-4-image' ).attr( 'src',  to );
 		} );
 	} );
 
@@ -373,10 +424,16 @@
 		} );
 	} );
 
+	wp.customize( 'team_member_4_text_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#pills-member4' ).css( 'color', to );
+		} );
+	} );
+
 
 	wp.customize( 'team_member_5_image', function( value ) {
 		value.bind( function( to ) {
-			$( '#pills-member5-tab' ).attr( 'src',  to );
+			$( '.team-member-5-image' ).attr( 'src',  to );
 		} );
 	} );
 
@@ -386,10 +443,16 @@
 		} );
 	} );
 
+	wp.customize( 'team_member_5_text_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#pills-member5' ).css( 'color', to );
+		} );
+	} );
+
 
 	wp.customize( 'team_member_6_image', function( value ) {
 		value.bind( function( to ) {
-			$( '#pills-member6-tab' ).attr( 'src',  to );
+			$( '.team-member-6-image' ).attr( 'src',  to );
 		} );
 	} );
 
@@ -398,6 +461,15 @@
 			$( '#pills-member6' ).attr( 'src',  to );
 		} );
 	} );
+
+	wp.customize( 'team_member_6_text_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#pills-member6' ).css( 'color', to );
+		} );
+	} );
+
+
+
 
 	/**************************************************
 	** Contact Section
@@ -475,6 +547,16 @@
 	} ); 
 
 
+	/**************************************************
+	** Footer Section
+	*************************************************/
+ 
+	wp.customize( 'footer_background_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-footer' ).css( 'background-color', to );
+			
+		} );
+	} ); 
 
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {

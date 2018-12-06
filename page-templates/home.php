@@ -182,38 +182,38 @@
 
         <li class="nav-item">
           <a class="nav-link active" id="pills-member1-tab" data-toggle="pill" href="#pills-member1" role="tab"
-            aria-controls="pills-member1" aria-selected="true"><img class="img-fluid team-member" value="Show Div" src=" <?php echo esc_url( get_theme_mod('team_member_1_image' , __(get_template_directory_uri() . '/images/Teacher1.png')) , 'kinderoo'); ?>" />
+            aria-controls="pills-member1" aria-selected="true"><img class="img-fluid team-member team-member-1-image" value="Show Div" src=" <?php echo esc_url( get_theme_mod('team_member_1_image' , __(get_template_directory_uri() . '/images/Teacher1.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member2-tab" data-toggle="pill" href="#pills-member2" role="tab" aria-controls="pills-member2"
-            aria-selected="false"> <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_2_image' , __(get_template_directory_uri() . '/images/Teacher2.png')) , 'kinderoo'); ?>" />
+            aria-selected="false"> <img class="img-fluid team-member team-member-2-image" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_2_image' , __(get_template_directory_uri() . '/images/Teacher2.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member3-tab" data-toggle="pill" href="#pills-member3" role="tab" aria-controls="pills-member3"
-            aria-selected="false"> <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_3_image' , __(get_template_directory_uri() . '/images/Teacher3.png')) , 'kinderoo'); ?>" />
+            aria-selected="false"> <img class="img-fluid team-member team-member-3-image" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_3_image' , __(get_template_directory_uri() . '/images/Teacher3.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member4-tab" data-toggle="pill" href="#pills-member4" role="tab" aria-controls="pills-member4"
-            aria-selected="false"><img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_4_image' , __(get_template_directory_uri() . '/images/Teacher4.png')) , 'kinderoo'); ?>" />
+            aria-selected="false"><img class="img-fluid team-member team-member-4-image" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_4_image' , __(get_template_directory_uri() . '/images/Teacher4.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member5-tab" data-toggle="pill" href="#pills-member5" role="tab" aria-controls="pills-member5"
-            aria-selected="false"><img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_5_image' , __(get_template_directory_uri() . '/images/Teacher5.png')) , 'kinderoo'); ?>" />
+            aria-selected="false"><img class="img-fluid team-member team-member-5-image" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_5_image' , __(get_template_directory_uri() . '/images/Teacher5.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" id="pills-member6-tab" data-toggle="pill" href="#pills-member6" role="tab" aria-controls="pills-member6"
             aria-selected="false">
-            <img class="img-fluid team-member" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_6_image' , __(get_template_directory_uri() . '/images/Teacher6.png')) , 'kinderoo'); ?>" />
+            <img class="img-fluid team-member team-member-6-image" value="Show Div" src="<?php echo esc_url( get_theme_mod('team_member_6_image' , __(get_template_directory_uri() . '/images/Teacher6.png')) , 'kinderoo'); ?>" />
           </a>
         </li>
 
@@ -230,22 +230,22 @@
 
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-member1" role="tabpanel" aria-labelledby="pills-member-tab">
-          <?php  _e( get_theme_mod('team_member_1_text') , 'kinderoo'); ?>
+          <?php  _e( get_theme_mod('team_member_1_text' , __('<strong>Alice Smith</strong><br/>Head Mistress<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
         </div>
         <div class="tab-pane fade" id="pills-member2" role="tabpanel" aria-labelledby="pills-member2-tab">
-          <?php  _e( get_theme_mod('team_member_2_text') , 'kinderoo'); ?>
+          <?php  _e( get_theme_mod('team_member_2_text' , __('<strong>Sally White</strong><br/>Busy Bees Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
         </div>
         <div class="tab-pane fade" id="pills-member3" role="tabpanel" aria-labelledby="pills-member3-tab">
-          <?php  _e( get_theme_mod('team_member_3_text') , 'kinderoo'); ?>
+          <?php  _e( get_theme_mod('team_member_3_text' , __('<strong>John Reed</strong><br/>Jungle Cubs Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
         </div>
         <div class="tab-pane fade" id="pills-member4" role="tabpanel" aria-labelledby="pills-member4-tab">
-          <?php  _e( get_theme_mod('team_member_4_text') , 'kinderoo'); ?>
+          <?php  _e( get_theme_mod('team_member_4_text' , __('<strong>Jenna Blake</strong><br/>Super Sprouts Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
         </div>
         <div class="tab-pane fade" id="pills-member5" role="tabpanel" aria-labelledby="pills-member5-tab">
-          <?php  _e( get_theme_mod('team_member_5_text') , 'kinderoo'); ?>
+          <?php  _e( get_theme_mod('team_member_5_text' , __('<strong>Oliver Lake</strong><br/>Space Cadets Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
         </div>
         <div class="tab-pane fade" id="pills-member6" role="tabpanel" aria-labelledby="pills-member6-tab">
-          <?php  _e( get_theme_mod('team_member_6_text') , 'kinderoo'); ?>
+          <?php  _e( get_theme_mod('team_member_6_text' , __('<strong>Laura Price</strong><br/>Music Teacher<br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</br></br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')) , 'kinderoo'); ?>
         </div>
       </div>
 
@@ -276,7 +276,7 @@
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
       <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-          <h2 class="contact-details-social"> <?php _e( get_theme_mod('contact_title') , 'kinderoo'); ?></h2>
+          <h2 class="contact-details-social"> <?php _e( get_theme_mod('contact_title'  , __('Get Social')) , 'kinderoo'); ?></h2>
 
           <?php if (!empty ( get_theme_mod('contact_facebook_url' ) )) : ?>
           <a href="<?php echo esc_url( get_theme_mod('contact_facebook_url') , 'kinderoo'); ?>"><i class="fab fa-facebook-f"></i></a>
@@ -303,18 +303,18 @@
       <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <h2 class="contact-details-info">
-          <?php  _e( get_theme_mod('contact_info_title') , 'kinderoo'); ?></h2>
+          <?php  _e( get_theme_mod('contact_info_title' , __('More Traditional')) , 'kinderoo'); ?></h2>
           <div id="phone"> <i class="fas fa-phone"></i>  
-          <?php if (!empty ( get_theme_mod('contact_phone' ) )) : ?>
-          <?php  _e( get_theme_mod('contact_phone') , 'kinderoo'); ?>
-          <?php endif;?>
+         
+          <?php  _e( get_theme_mod('contact_phone'  , __(' 0312345678')) , 'kinderoo'); ?>
+          
     </div>
-          <div id="email"><i class="fas fa-at"></i>  <?php if (!empty ( get_theme_mod('contact_email' ) )) : ?>
-          <?php  _e( get_theme_mod('contact_email') , 'kinderoo'); ?>
-          <?php endif;?></div>
-          <div id="address"><i class="fas fa-map-marker-alt"></i>  <?php if (!empty ( get_theme_mod('contact_address' ) )) : ?>
-          <?php  _e( get_theme_mod('contact_address') , 'kinderoo'); ?>
-          <?php endif;?> </div>
+          <div id="email"><i class="fas fa-at"></i>  
+          <?php  _e( get_theme_mod('contact_email' , __('example@kinderoo.com')) , 'kinderoo'); ?>
+         </div>
+          <div id="address"><i class="fas fa-map-marker-alt"></i>  
+          <?php  _e( get_theme_mod('contact_address' , __('1 Example Road, Melbourne, Australia, 3000')) , 'kinderoo'); ?>
+           </div>
         </div>
       </div>
 
